@@ -1,0 +1,17 @@
+body {
+    margin:0;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 16px; 
+}
+
+.header {
+    font: 50px;
+}
+
+.right {
+    display: flex;
+    align-items: flex-end;
+}
