@@ -3,15 +3,43 @@ body {
 }
 ul {
     list-style-type: none;
+    display: inline-flex;
+    gap: 16px; 
+}
+
+a{
+    color: white;
+    align-items: right;
     display: flex;
     gap: 16px; 
 }
 
 .header {
     font: 50px;
+    background-color: #1F2937; 
+    height: 250px;
 }
 
-.right {
-    display: flex;
-    align-items: flex-end;
+.logo {
+    color: white;
+    
 }
+
+h1 {
+    color: white;
+    display: block;
+    padding: 10px 20px 0px 20px;
+}
+
+h2 {
+    color: white;
+    font-size: small;
+    display: block;
+    padding: 10px 20px 0px 20px;
+
+}
+
+button {
+    display: block;
+}
+
