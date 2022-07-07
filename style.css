@@ -4,8 +4,7 @@ body {
 
 .header {
     background-color: #1F2937;
-    height: 300px;
-    font: 50px;
+    height: 400px;
     padding-left: 200px;
     padding-right: 200px; 
 }
@@ -13,18 +12,12 @@ body {
 .left {
     text-align: left;
     color: white; 
+    font: 50px;
 }
 .right {
-    display: flex;
-    gap: 20px; 
+    gap: 20px;
+    text-align: right;
     justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.right a {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
 }
 
 a:link {
@@ -54,9 +47,11 @@ h1 {
     font-style: bold;
 }
 
-h3{ 
+h3 { 
     font-size: 18px;
+    flex-wrap: wrap-reverse;
 }
+
 button {
     color: white;
     background-color: #3882f6;
@@ -65,5 +60,17 @@ button {
     border-radius: 10px; 
     border: none; 
     min-width: 100px;
-    min-height: auto;
+}
+
+.image-placeholder {
+    color: gray;
+    display: flex;
+    height: 50px;
+    width: 250px;
+    margin: 5px;
+}
+
+.image-placeholder .h4 {
+    text-align: right;
+    align-self: flex-end; 
 }
