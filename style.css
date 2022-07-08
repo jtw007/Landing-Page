@@ -1,5 +1,6 @@
 body {
-    margin: 0;  
+    margin: 0; 
+    display: flex; 
 }
 
 .header {
@@ -7,16 +8,21 @@ body {
     height: 400px;
     padding-left: 200px;
     padding-right: 200px; 
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .left {
     text-align: left;
     color: white; 
-    font: 50px;
+    font: 30px;
+    display: flex;
+    justify-content: flex-start;
 }
 .right {
     gap: 20px;
     text-align: right;
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -40,16 +46,27 @@ a:active {
 
 .introduction {
     color: white;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
-h1 {
+.website {
     font-size: 48px; 
     font-style: bold;
+    font-weight: bolder;
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
 }
 
-h3 { 
+.subtext { 
     font-size: 18px;
-    flex-wrap: wrap-reverse;
+    display: flex; 
+    flex-wrap: wrap;
 }
 
 button {
