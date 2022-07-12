@@ -1,28 +1,35 @@
 body {
     margin: 0; 
-    display: flex; 
+    display: flex;
+    flex-direction: column; 
 }
 
 .header {
     background-color: #1F2937;
-    height: 400px;
-    padding-left: 200px;
-    padding-right: 200px; 
-    display: flex;
-    flex-wrap: wrap;
+    height: 5%;
+    padding-left: 10%;
+    padding-right: 10%; 
+    display: inline-flex;
+    align-items: baseline;
 }
 
 .left {
-    text-align: left;
     color: white; 
     font: 30px;
     display: flex;
-    justify-content: flex-start;
 }
-.right {
-    gap: 20px;
-    text-align: right;
+
+.links {
     display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.links .ul .li {
     justify-content: flex-end;
 }
 
@@ -45,13 +52,12 @@ a:active {
 }
 
 .introduction {
+    background: #1F2937;
     color: white;
     display: flex;
-    text-align: left;
-    align-items: center;
-    justify-content: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
+    height: 300px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .website {
@@ -59,7 +65,6 @@ a:active {
     font-style: bold;
     font-weight: bolder;
     display: flex;
-    text-align: left;
     flex-wrap: wrap;
 }
 
@@ -73,21 +78,10 @@ button {
     color: white;
     background-color: #3882f6;
     font-size: 24px; 
-    padding: 10px 20px; 
-    border-radius: 10px; 
-    border: none; 
-    min-width: 100px;
+    display: flex;
+    text-align: center;
 }
 
 .image-placeholder {
-    color: gray;
-    display: flex;
-    height: 50px;
-    width: 250px;
-    margin: 5px;
-}
 
-.image-placeholder .h4 {
-    text-align: right;
-    align-self: flex-end; 
 }
