@@ -11,6 +11,7 @@ body {
     padding-right: 10%; 
     display: inline-flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 .left {
@@ -21,17 +22,14 @@ body {
 
 .links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 }
 
 ul {
     list-style-type: none;
-    display: inline-flex;
+    display: flex;
 }
 
-.links .ul .li {
-    justify-content: flex-end;
-}
 
 a:link {
     color: white;
