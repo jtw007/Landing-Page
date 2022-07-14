@@ -1,7 +1,8 @@
 body {
     margin: 0; 
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    position: fixed; 
 }
 
 .header {
@@ -17,19 +18,16 @@ body {
 .left {
     color: white; 
     font: 30px;
-    display: flex;
 }
 
 .links {
-    display: flex;
-    justify-content: space-evenly;
+    
 }
 
 ul {
     list-style-type: none;
     display: flex;
 }
-
 
 a:link {
     color: white;
@@ -53,9 +51,22 @@ a:active {
     background: #1F2937;
     color: white;
     display: flex;
-    height: 300px;
+    height: 350px;
     padding-left: 10%;
     padding-right: 10%;
+    flex-direction: row;
+}
+
+.intro-left {
+    width: 50%;
+    height: 100%;
+}
+
+.intro-right {
+    width: 50%;
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .website {
@@ -64,12 +75,17 @@ a:active {
     font-weight: bolder;
     display: flex;
     flex-wrap: wrap;
+    max-width: 75%;
+    margin-bottom: 0px;
 }
 
 .subtext { 
     font-size: 18px;
     display: flex; 
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    max-width: 75%;
+    margin-top: 0px;
+    margin-bottom: 1%;
 }
 
 button {
@@ -77,9 +93,35 @@ button {
     background-color: #3882f6;
     font-size: 24px; 
     display: flex;
-    text-align: center;
+    flex-shrink: 10;
+    max-width: 25%;
+    justify-content: center;
+    margin-top: 0px;
 }
 
 .image-placeholder {
-
+    display:flex;
+    justify-content: flex-end;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
 }
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 36px; 
+    font-style: bold;
+    font-weight: bolder;
+    display: flex;
+    color:#1f2937;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
