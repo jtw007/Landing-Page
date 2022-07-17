@@ -2,7 +2,7 @@ body {
     margin: 0; 
     display: flex;
     flex-direction: column;
-    position: fixed; 
+    position: relative; 
 }
 
 .header {
@@ -111,6 +111,9 @@ button {
 .info {
     display: flex;
     flex-direction: column;
+    padding-left: 15%;
+    padding-right: 15%;
+    height: 350px;
 }
 
 .heading {
@@ -125,3 +128,20 @@ button {
     padding-bottom: 2%;
 }
 
+.subheading {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-color:#3882f6;
+}
