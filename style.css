@@ -10,23 +10,21 @@ body {
     height: 5%;
     padding-left: 10%;
     padding-right: 10%; 
-    display: inline-flex;
+    display: flex;
     align-items: baseline;
     justify-content: space-between;
 }
 
 .left {
+    display: flex;
     color: white; 
     font: 30px;
 }
 
 .links {
-    
-}
-
-ul {
-    list-style-type: none;
     display: flex;
+    justify-content: space-between;
+    width: 32%;
 }
 
 a:link {
@@ -88,15 +86,20 @@ a:active {
     margin-bottom: 1%;
 }
 
-button {
+.introduction button {
     color: white;
     background-color: #3882f6;
     font-size: 24px; 
     display: flex;
     flex-shrink: 10;
-    max-width: 25%;
+    width: 135px;
+    height: 45px;
     justify-content: center;
+    align-items: center;
     margin-top: 0px;
+    border-radius: 12px;
+    border-width: 3px;
+    border-color:#3882f6;
 }
 
 .image-placeholder {
@@ -144,4 +147,114 @@ button {
     height: 100px;
     margin: 10px;
     border-color:#3882f6;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background: #e5e7eb;
+    height: 200px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.quote-body {
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quote-end {
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    justify-content: flex-end;
+    font-style: bold;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.action {
+    display: flex;
+    height: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: row;
+}
+
+.action-container {
+    display: flex;
+    margin: 30px 00px 30px 00px;
+    background-color: #3882f6;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+}
+
+.action-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    align-content: center;
+}
+
+.action-time {
+    margin-bottom: 0;
+    margin-top: 10%;
+    font-size: 20px;
+    font-style: bold;
+    font-weight: bolder;
+}
+
+.click {
+    margin-top: 0;
+}
+
+.sign-up {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.action button {
+    display: flex;
+    color: white;
+    background-color: #3882f6;
+    width: 135px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border-color: white;
+    font-size: 24px;
+    border-width: 3px;
+}
+
+.footer {
+    display: flex;
+    background-color: #1F2937;
+    height: 75px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+    width: 100%;
+}
+
+.footer-text {
+    color: white;
 }
